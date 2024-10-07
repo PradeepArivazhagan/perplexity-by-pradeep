@@ -5,7 +5,7 @@ import Header from "../Components/Header";
 
 const SignInPage = () => {
   return (
-    <div className="font-[Inter] h-screen flex flex-col md:flex-row">
+    <div className="font-[Inter] flex flex-col md:flex-row">
       <Header />
       <SideBar />
       <SignIn />
