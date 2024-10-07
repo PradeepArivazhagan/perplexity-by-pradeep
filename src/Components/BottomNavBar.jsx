@@ -1,10 +1,24 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const BottomNavBar = () => {
+  const [activeMenu, setActiveMenu] = useState("home");
+
+  const onClickMenu = (activeMenuItem) => {
+    setActiveMenu(activeMenuItem);
+  };
+
   return (
     <ul className="flex flex-row items-center justify-evenly md:hidden bg-[#f2f3ed] border-t-2 border-stone-200">
       <Link to="/">
-        <li className="flex flex-col items-center gap-1 text-[#1a3135] py-2 border-t-4 border-[#1a3135]">
+        <button
+          onClick={() => onClickMenu("home")}
+          className={`w-16 flex flex-col items-center gap-1 py-2 hover:bg-[#e6e7e1] ${
+            activeMenu === "home"
+              ? "text-[#1a3135] border-t-4 border-[#1a3135]"
+              : "text-[#63645e]"
+          }`}
+        >
           <svg
             aria-hidden="true"
             focusable="false"
@@ -21,10 +35,17 @@ const BottomNavBar = () => {
             ></path>
           </svg>
           <h1 className="text-sm font-medium">Home</h1>
-        </li>
+        </button>
       </Link>
       <Link to="/discover">
-        <li className="flex flex-col items-center gap-1 text-[#63645e] hover:text-[#1a3135] py-2 ">
+        <button
+          onClick={() => onClickMenu("discover")}
+          className={`w-16 flex flex-col items-center gap-1 py-2 hover:bg-[#e6e7e1] ${
+            activeMenu === "discover"
+              ? "text-[#1a3135] border-t-4 border-[#1a3135]"
+              : "text-[#63645e]"
+          }`}
+        >
           <svg
             aria-hidden="true"
             focusable="false"
@@ -41,10 +62,17 @@ const BottomNavBar = () => {
             ></path>
           </svg>
           <h1 className="text-sm font-medium">Discover</h1>
-        </li>
+        </button>
       </Link>
-      <Link to="/">
-        <li className="flex flex-col items-center gap-1 text-[#63645e] hover:text-[#1a3135] py-2">
+      <Link to="/library">
+        <button
+          onClick={() => onClickMenu("library")}
+          className={`w-16 flex flex-col items-center gap-1 py-2 hover:bg-[#e6e7e1] ${
+            activeMenu === "library"
+              ? "text-[#1a3135] border-t-4 border-[#1a3135]"
+              : "text-[#63645e]"
+          }`}
+        >
           <svg
             aria-hidden="true"
             focusable="false"
@@ -61,10 +89,17 @@ const BottomNavBar = () => {
             ></path>
           </svg>
           <h1 className="text-sm font-medium">Library</h1>
-        </li>
+        </button>
       </Link>
-      <Link to="/">
-        <li className="flex flex-col items-center gap-1 text-[#63645e] hover:text-[#1a3135] py-2">
+      <Link to="/sign-in">
+        <button
+          onClick={() => onClickMenu("sign-in")}
+          className={`w-16 flex flex-col items-center gap-1 py-2 hover:bg-[#e6e7e1] ${
+            activeMenu === "sign-in"
+              ? "text-[#1a3135] border-t-4 border-[#1a3135]"
+              : "text-[#63645e]"
+          }`}
+        >
           <svg
             aria-hidden="true"
             focusable="false"
@@ -81,7 +116,7 @@ const BottomNavBar = () => {
             ></path>
           </svg>
           <h1 className="text-sm font-medium">Sign in</h1>
-        </li>
+        </button>
       </Link>
     </ul>
   );

@@ -126,10 +126,14 @@ const SideBar = () => {
                   <h1 className="text-base font-medium">Discover</h1>
                 </button>
               </Link>
-              <Link to="/">
+              <Link to="/library">
                 <button
-                  onClick={() => onClickMenu("home")}
-                  className="w-full flex flex-row items-center gap-1 py-2 pl-4 hover:bg-[#e6e7e1] text-[#63645e] hover:text-[#1a3135] rounded-md"
+                  onClick={() => onClickMenu("library")}
+                  className={`w-full flex flex-row items-center gap-1 py-2 pl-4 hover:bg-[#e6e7e1] hover:text-[#1a3135] rounded-md ${
+                    activeMenu === "library"
+                      ? "text-[#1a3135]"
+                      : "text-[#63645e]"
+                  }`}
                 >
                   <svg
                     aria-hidden="true"
@@ -149,10 +153,14 @@ const SideBar = () => {
                   <h1 className="text-base font-medium">Library</h1>
                 </button>
               </Link>
-              <Link to="/">
+              <Link to="/sign-in">
                 <button
-                  onClick={() => onClickMenu("home")}
-                  className="w-full flex flex-row items-center gap-1 py-2 pl-4 hover:bg-[#e6e7e1] text-[#63645e] hover:text-[#1a3135] rounded-md"
+                  onClick={() => onClickMenu("sign-in")}
+                  className={`w-full flex flex-row items-center gap-1 py-2 pl-4 hover:bg-[#e6e7e1] hover:text-[#1a3135] rounded-md ${
+                    activeMenu === "sign-in"
+                      ? "text-[#1a3135]"
+                      : "text-[#63645e]"
+                  }`}
                 >
                   <svg
                     aria-hidden="true"
@@ -345,10 +353,14 @@ const SideBar = () => {
                   </svg>
                 </button>
               </Link>
-              <Link to="/">
+              <Link to="/library">
                 <button
-                  onClick={() => onClickMenu("home")}
-                  className="w-full flex flex-row items-center justify-center py-3 hover:bg-[#e6e7e1] text-[#63645e] hover:text-[#1a3135]"
+                  onClick={() => onClickMenu("library")}
+                  className={`w-full flex flex-row items-center justify-center py-3 hover:bg-[#e6e7e1] hover:text-[#1a3135] ${
+                    activeMenu === "library"
+                      ? "text-[#1a3135] border-r-4 border-[#1a3135]"
+                      : "text-[#63645e]"
+                  }`}
                 >
                   <svg
                     aria-hidden="true"
@@ -367,10 +379,14 @@ const SideBar = () => {
                   </svg>
                 </button>
               </Link>
-              <Link to="/">
+              <Link to="/sign-in">
                 <button
-                  onClick={() => onClickMenu("home")}
-                  className="w-full flex flex-row items-center justify-center py-3 hover:bg-[#e6e7e1] text-[#63645e] hover:text-[#1a3135]"
+                  onClick={() => onClickMenu("sign-in")}
+                  className={`w-full flex flex-row items-center justify-center py-3 hover:bg-[#e6e7e1] hover:text-[#1a3135] ${
+                    activeMenu === "sign-in"
+                      ? "text-[#1a3135] border-r-4 border-[#1a3135]"
+                      : "text-[#63645e]"
+                  }`}
                 >
                   <svg
                     aria-hidden="true"
