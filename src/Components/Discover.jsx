@@ -33,7 +33,7 @@ const Discover = () => {
 
         <Interests />
 
-        <div className="mx-auto w-[93%] md:w-[90%] lg:w-[55%] flex flex-col gap-3">
+        <div className="mx-auto mb-16 md:mb-0 w-[93%] md:w-[90%] lg:w-[55%] flex flex-col gap-3">
           <Link to="/article">
             <LargeCard />
           </Link>

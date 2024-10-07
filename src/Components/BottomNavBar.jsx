@@ -11,7 +11,7 @@ const BottomNavBar = () => {
   };
 
   return (
-    <div className="flex flex-row items-center justify-evenly md:hidden bg-[#f2f3ed] border-t-2 border-stone-200">
+    <div className="absolute w-full bottom-0 flex flex-row items-center justify-evenly md:hidden bg-[#f2f3ed] border-t-2 border-stone-200">
       <button
         onClick={() => onClickMenu("/")}
         className={`w-16 flex flex-col items-center gap-1 py-2 hover:bg-[#e6e7e1] ${
