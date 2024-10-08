@@ -1,6 +1,6 @@
 const Askfollowup = () => {
   return (
-    <div className=" fixed bottom-20 left-[20px] right-[20px] md:bottom-5 md:left-[230px] md:right-[150px] lg:bottom-10 lg:left-[21rem] lg:right-[33rem] bg-[#f2f3ed] p-2 rounded-full">
+    <div className=" fixed bottom-20 left-[20px] right-[20px] md:bottom-5 md:left-[230px] md:right-[150px] lg:bottom-10 lg:left-[21rem] lg:right-[33rem] bg-[#f2f3ed] p-1 md:p-2 rounded-full">
       <div className="bg-white border-2 border-[#e3e3dc] flex flex-row items-center py-2 px-3 md:py-3 md:px-4 rounded-full">
         <input
           type="text"

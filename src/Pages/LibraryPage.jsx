@@ -5,7 +5,7 @@ import SideBar from "../Components/SideBar";
 
 const LibraryPage = () => {
   return (
-    <div className="font-[Inter] flex flex-col md:flex-row">
+    <div className="md:h-screen font-[Inter] flex flex-col md:flex-row">
       <Header/>
       <SideBar />
       <Library />

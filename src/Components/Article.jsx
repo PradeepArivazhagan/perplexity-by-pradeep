@@ -11,7 +11,7 @@ import name from "../assets/name.png";
 
 const Article = () => {
   return (
-    <div className="w-[100%] bg-[#f2f3ed] lg:py-2 pr-3 overflow-auto scroll-smooth">
+    <div className="w-[100%] bg-[#f2f3ed] lg:py-2 lg:pr-3 overflow-auto scroll-smooth">
       <div className="relative bg-white lg:rounded-md md:border border-[#ebece6] pb-4">
         <div className="sticky z-10 rounded-t-md top-0 lg:-top-2 bg-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 py-2 px-4 border-b border-slate-100">
           <div className="flex flex-row items-center justify-between md:justify-end">
@@ -381,7 +381,7 @@ const Article = () => {
             </div>
 
             {/*On Page Navigation*/}
-            <div className="hidden sticky w-2/5 md:flex flex-col gap-2">
+            <div className="hidden sticky w-1/5 lg:2/5 md:flex flex-col gap-2">
               <a
                 href="#introduction"
                 className="py-0 px-3 border-l-[3px] border-[#153137] text-[#13343b]  text-sm lg:text-base"

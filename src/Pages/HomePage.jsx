@@ -5,7 +5,7 @@ import SideBar from "../Components/SideBar";
 
 const HomePage = () => {
   return (
-    <div className="relative font-[Inter] flex flex-col md:flex-row">
+    <div className="md:h-screen font-[Inter] flex flex-col md:flex-row">
       <Header/>
       <SideBar />
       <Home />

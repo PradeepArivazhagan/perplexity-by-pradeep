@@ -4,7 +4,7 @@ import SideBar from "../Components/SideBar";
 
 const DiscoverPage = () => {
   return (
-    <div className="relative font-[Inter] h-screen flex flex-col md:flex-row">
+    <div className="h-screen font-[Inter] flex flex-col md:flex-row">
       <SideBar />
       <Discover />
       <BottomNavBar />

@@ -2,19 +2,19 @@ import What from "./What";
 
 const Home = () => {
   return (
-    <div className="h-screen w-[100%] bg-[#f2f3ed] lg:py-2 lg:pr-3">
+    <div className="w-[100%] bg-[#f2f3ed] lg:py-2 lg:pr-3">
       <div className="relative py-6 md:py-0 h-full bg-white lg:rounded-md md:border border-[#ebece6]">
         <div className="h-full flex flex-col items-center">
           <div className="max-md:mb-auto md:mt-auto w-[90%] md:w-[80%] lg:w-[50%] box-content">
-            <h1 className="text-4xl text-[#163238] text-center">
+            <h1 className="text-3xl lg:text-4xl text-[#163238] text-center">
               Where Knowledge begins
             </h1>
 
-            <div className="p-2 mt-10 border-2 border-[#e7e8e3] w-[100%] rounded-md focus:outline-2">
-              <textarea
+            <div className="px-2 pb-2 mt-10 border-2 border-[#e7e8e3] w-[100%] rounded-md focus:outline-2">
+              <input
                 type="text"
                 placeholder="Ask anything..."
-                className="py-2 px-3 focus:outline-none text-[#1f2f30] font-normal w-full "
+                className="px-3 pb-2 focus:outline-none text-[#1f2f30] font-normal w-full h-16"
               />
               <div className="flex flex-row items-center justify-between">
                 <div className="flex flex-row items-center gap-2">

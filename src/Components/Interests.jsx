@@ -8,7 +8,7 @@ const Interests = () => {
   };
 
   return (
-    <div className="sticky -top-2 bg-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 py-3 mx-auto w-[93%] md:w-[90%] lg:w-[55%] flex flex-row items-center overflow-auto no-scrollbar">
+    <div className="sticky top-0 lg:-top-2 bg-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 py-3 mx-auto w-[93%] md:w-[90%] lg:w-[55%] flex flex-row items-center overflow-auto no-scrollbar">
       <button
         onClick={() => handleInterestClick("top")}
         className={`w-fit py-3 px-4 flex flex-row items-center gap-1 rounded-md ${
